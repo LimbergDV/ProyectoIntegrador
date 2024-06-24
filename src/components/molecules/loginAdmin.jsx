@@ -1,15 +1,15 @@
 import React from "react";
-import './login.css';
+import './loginAdmin.css';
 import { MdMail } from "react-icons/md";
 import { FaLock } from "react-icons/fa";
 
-function Login (){
+function LoginAdmin (){
     return(
         <>
         <div className="formLogin">
             <form action="">
-                <h1>¿Ya estás registrado?</h1>
-                <h2>Si ya tienes una cuenta con <br />nosotros, por favor, inicie sesión.</h2>
+                <h1>Bienvenido Administrador</h1>
+                <h2>Inicie sesión para continuar por favor</h2>
                 
                 <div className="inputMail">
                 <label htmlFor="">Correo Electónico:</label>
@@ -28,12 +28,9 @@ function Login (){
                 <br />
                 <br />
                 
-                <div className="registerOpcion">
-                    <p>¿No tienes una cuenta en nuestro sitio web? <a href="#">Registrate</a></p>
-                </div>
 
-                <div className="opcionAdmin">
-                    <p>¿Eres administrador? <br /><a href="">Inicia Sesión Aquí</a></p>
+                <div className="opcionUser">
+                    <p>¿Eres usuario? <br /><a href="#">Inicia Sesión Aquí</a></p>
                 </div>
 
                 <div className="opcionRecepcionista">
@@ -47,4 +44,4 @@ function Login (){
     )
 }
 
-export default Login
+export default LoginAdmin
